@@ -1,0 +1,52 @@
+baseURL = 'https://alicheh.github.io/'
+languageCode = 'en-us'
+title = 'Alicheh'
+theme = 'PaperMod'
+
+[params]
+    defaultTheme = "auto"
+    showCodeCopyButtons = true
+    displayFullContent = false
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    ShowWordCount = true
+    ShowRssButtonInSectionTermList = true
+    UseHugoToc = true
+
+    [params.profileMode]
+        enabled = true
+        title = "Alicheh's Digital Garden"
+        subtitle = "Explorations, Learnings, and Projects."
+        imageUrl = ""
+        imageWidth = 120
+        imageHeight = 120
+        imageTitle = "Avatar"
+        [[params.profileMode.buttons]]
+            name = "Blog"
+            url = "posts"
+        [[params.profileMode.buttons]]
+            name = "Projects"
+            url = "projects"
+        [[params.profileMode.buttons]]
+            name = "Resume"
+            url = "about"
+
+[menu]
+    [[menu.main]]
+        identifier = "posts"
+        name = "Blog"
+        url = "/posts/"
+        weight = 10
+    [[menu.main]]
+        identifier = "projects"
+        name = "Projects"
+        url = "/projects/"
+        weight = 20
+    [[menu.main]]
+        identifier = "about"
+        name = "Resume"
+        url = "/about/"
+        weight = 30
